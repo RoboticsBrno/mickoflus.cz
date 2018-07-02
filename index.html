@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
 	<meta charset="utf-8">
@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>HTML Template</title>
+	<title>Míčkoflus</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -37,155 +37,197 @@
 </head>
 
 <body>
-	<!-- Header -->
 	<header id="home">
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+		<div class="bg-img" style="background-image: url('./img/mickoflus-title.jpg');">
 			<div class="overlay"></div>
 		</div>
-		<!-- /Background Image -->
-
-		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 			<div class="container">
 
 				<div class="navbar-header">
-					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="index.html">
-							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
+							<img class="logo" src="img/logo.svg" alt="logo">
+							<img class="logo-alt" src="img/logo-alt.svg" alt="logo">
 						</a>
 					</div>
-					<!-- /Logo -->
 
-					<!-- Collapse nav button -->
 					<div class="nav-collapse">
 						<span></span>
 					</div>
-					<!-- /Collapse nav button -->
 				</div>
 
-				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#service">Services</a></li>
-					<li><a href="#pricing">Prices</a></li>
-					<li><a href="#team">Team</a></li>
-					<li class="has-dropdown"><a href="#blog">Blog</a>
-						<ul class="dropdown">
-							<li><a href="blog-single.html">blog post</a></li>
-						</ul>
-					</li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#home">Úvod</a></li>
+					<li><a href="#about">O Míčkoflusu</a></li>
+					<li><a href="#partners">Partneři</a></li>
+					<li><a href="#gallery">Galerie</a></li>
+					<li><a href="guide">Návod na složení</a></li>
+					<li><a href="team">Kdo za tím stojí</a></li>
+					<li><a href="#portfolio">Kontakt</a></li>
 				</ul>
-				<!-- /Main navigation -->
-
 			</div>
 		</nav>
-		<!-- /Nav -->
 
-		<!-- home wrapper -->
 		<div class="home-wrapper">
 			<div class="container">
 				<div class="row">
 
-					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">We Are Creative Agency</h1>
-							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.
-							</p>
-							<button class="white-btn">Get Started!</button>
-							<button class="main-btn">Learn more</button>
+							<h1 class="white-text">Míčkoflus</h1>
+							<p class="white-text">Sestřel je všechny!</p>
+							<a href="#about"><button class="white-btn">Dozvědět se více</button></a>
+							<button class="main-btn">Poskládat si Míčkoflus</button>
 						</div>
 					</div>
-					<!-- /home content -->
-
 				</div>
 			</div>
 		</div>
-		<!-- /home wrapper -->
-
 	</header>
-	<!-- /Header -->
 
-	<!-- About -->
 	<div id="about" class="section md-padding">
-
-		<!-- Container -->
 		<div class="container">
-
-			<!-- Row -->
 			<div class="row">
+				<div class="section-header">
+					<h2 class="title">O míčkoflusu</h2>
+					<p>Jezdí to, střílí to a vypadá to nevinně. To je ve zkratce Míčkoflus &#8212;
+					robotická stavebnice z Robotárny (pobočka <a href="https://helceletka.cz">DDM
+					Helceletova</a>). Tato stavebnice byla poprvé uvedena na <a href="">Robotickém
+					táboře 2018</a>.</p>
 
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Welcome to Website</h2>
+					ToDo: Promo video
 				</div>
-				<!-- /Section header -->
 
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-cogs"></i>
-						<h3>Fully Customizible</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+				<div class="row row-eq-height">
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<i class="fa fa-tree"></i>
+							<h3>Nezaměnitelný dřevěný design</h3>
+							<p>Pevný, lehký, snadno lepitelný. To vše díky dřevu.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<i class="fa fa-cogs"></i>
+							<h3>5 nezávislých motorů</h3>
+							<p>Díky kterým může Míčkoflus jezdit, mířit a střílet. K motorům je možné
+							připojt enkodéry a řídit je precizně.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<i class="fa fa-mobile"></i>
+							<h3>Ovládaný z telefonu</h3>
+							<p>V základním módu je Míčkoflus dálkově řiditelný z telefonu přes WiFi nebo
+							Bluetooth.</p>
+						</div>
 					</div>
 				</div>
-				<!-- /about -->
 
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-magic"></i>
-						<h3>Awesome Features</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+				<div class="row row-eq-height">
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<i class="fa fa-child"></i>
+							<h3>Vhodný pro začátečníky i pokročilé</h3>
+							<p>Základní model zvládne postavit každý. Troufneš si ale postavit větší
+							zásobník na míčky nebo doplnit gyroskop a naprogramovat si stabilizaci věže
+							za jízdy?</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<i class="fa fa-random"></i>
+							<h3>Univerzální</h3>
+							<p>Nebaví tě už Míčkoflus? Jednoduše vyber řídicí elektroniku a postav něco
+							nového. Řidicí deska umožňuje řídit 8 motorů a poskytuje dostatek GPIO pro
+							připojení senzorů a jiných periferií. Vypočetního výkonu a konektivity je
+							také dostatek díky ESP32 v roli hlavního mikrokontroléru.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<i class="fa fa-github"></i>
+							<h3>Open source</h3>
+							<p>Veškeré podklady k Míčkoflusu of mechanické konstrukce, přes elektroniku
+							až po firmware jsou open-source. I ty můžeš míčkoflus vylepšit!</p>
+						</div>
 					</div>
 				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-mobile"></i>
-						<h3>Fully Responsive</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
-					</div>
-				</div>
-				<!-- /about -->
-
 			</div>
-			<!-- /Row -->
-
 		</div>
-		<!-- /Container -->
-
 	</div>
-	<!-- /About -->
 
-
-	<!-- Portfolio -->
-	<div id="portfolio" class="section md-padding bg-grey">
-
-		<!-- Container -->
+	<div id="partners" class="section md-padding bg-grey">
 		<div class="container">
-
-			<!-- Row -->
 			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Featured Works</h2>
+				<div class="section-header">
+					<h2 class="title">Patneři</h2>
+					<p>První uvedení na Robotickém táboře 2018 pořádaném <a
+					href="https://helceletka.cz">DDM Helceletova</a> bylo
+					podpořeno našimi partnery. Bez jejich pomoci bychom
+					nezvládli uvést stavebnici Míčkoflusu účastníkům tábora.
+					Tímto bychom jim rádi poděkovali.</p>
 				</div>
-				<!-- /Section header -->
 
-				<!-- Work -->
+				<div class="row row-eq-height">
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<a href="https://www.fablabbrno.cz/">
+								<img src="img/partners/fablab.png" class="partner"/>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<a href="https://www.redhat.com/en/global/czech-republic">
+								<img src="img/partners/redhat.jpg" class="partner"/>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<a href="https://www.gatema.cz/"></a>
+								<img src="img/partners/gatema.svg" class="partner"/>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row row-eq-height">
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<a href="https://www.honeywell.com/worldwide/en-cz">
+								<img src="img/partners/honeywell.png" class="partner"/>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 xsm-padding">
+						<div class="about">
+							<a href="https://www.soselectronic.cz/">
+								<img src="img/partners/sos.jpg" class="partner"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gallery" class="section md-padding">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h2 class="title">Galerie</h2>
+				</div>
+
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive" src="./img/work1.jpg" alt="">
 					<div class="overlay"></div>
@@ -198,9 +240,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
 
-				<!-- Work -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive" src="./img/work2.jpg" alt="">
 					<div class="overlay"></div>
@@ -213,9 +253,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
 
-				<!-- Work -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive" src="./img/work3.jpg" alt="">
 					<div class="overlay"></div>
@@ -228,9 +266,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
 
-				<!-- Work -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive" src="./img/work4.jpg" alt="">
 					<div class="overlay"></div>
@@ -243,9 +279,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
 
-				<!-- Work -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive" src="./img/work5.jpg" alt="">
 					<div class="overlay"></div>
@@ -258,9 +292,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
 
-				<!-- Work -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive" src="./img/work6.jpg" alt="">
 					<div class="overlay"></div>
@@ -273,31 +305,16 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
-
 			</div>
-			<!-- /Row -->
-
 		</div>
-		<!-- /Container -->
-
 	</div>
-	<!-- /Portfolio -->
 
-	<!-- Service -->
-	<div id="service" class="section md-padding">
-
-		<!-- Container -->
+	<div id="guide" class="section md-padding">
 		<div class="container">
-
-			<!-- Row -->
 			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">What we offer</h2>
+				<div class="section-header">
+					<h2 class="title">Návod na složení</h2>
 				</div>
-				<!-- /Section header -->
 
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
@@ -899,18 +916,16 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
+						<a href="index.html"><img src="img/logo-alt.svg" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://www.facebook.com/robotarna/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/RobotikaBrno"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCxLGjiNwJ9u7Wdb1kahaHgg"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https:/www.github.com/RoboticsBrno"><i class="fa fa-github"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 
