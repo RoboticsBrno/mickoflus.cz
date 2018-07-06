@@ -55,8 +55,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: #10161A;
 }
 
@@ -78,6 +78,10 @@ h4 {
 
 h5 {
     font-size: 16px;
+}
+
+p {
+    text-align: justify;
 }
 
 a {
@@ -112,11 +116,11 @@ a:hover, a:focus {
     color: #FFF;
 }
 
-ul, ol {
+/* ul, ol {
     margin: 0;
     padding: 0;
     list-style: none
-}
+} */
 
 /* -- section  -- */
 
@@ -1764,4 +1768,30 @@ header {
 
 .rounded-circle {
     border-radius: 50%!important;
+}
+
+.figure {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.figure-img {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure-caption {
+    font-size: 90%;
+    color: #6c757d;
+    display: block;
+    background: #6195FF30;
+    padding: 1em;
+    min-height: 50px;
+    margin-bottom: 1rem;
 }

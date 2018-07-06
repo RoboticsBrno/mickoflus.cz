@@ -56,7 +56,7 @@
 
 	///////////////////////////
 	// magnificPopup
-	$('.work').magnificPopup({
+	$('.work,figure').magnificPopup({
 		delegate: '.lightbox',
 		type: 'image'
 	});
