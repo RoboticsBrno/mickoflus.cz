@@ -126,6 +126,7 @@ a:hover, a:focus {
 
 .section {
     position: relative;
+    counter-reset: figureStep;
 }
 
 .md-padding {
@@ -1774,6 +1775,11 @@ header {
     display: inline-block;
     padding-left: 2rem;
     padding-right: 2rem;
+    counter-increment: figureStep;
+}
+
+.figure figcaption:before {
+	content: 'Krok ' counter(figureStep) ': ';
 }
 
 .figure-img {
