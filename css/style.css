@@ -98,6 +98,11 @@ a:hover, a:focus {
     color: #6195FF;
 }
 
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
 .main-color {
     color: #6195FF;
 }
