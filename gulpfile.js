@@ -14,7 +14,7 @@ gulp.task('deploy', function() {
     password: args.password,
     log: gulp.log
   });
-  return gulp.src(['*.html', './img/**', 'preview/**', 'css/*.css', 'fonts/*', 'js/*.js', 'favicon.ico'])
+  gulp.src(['*.html', './img/**', 'preview/**', 'css/*.css', 'fonts/*', 'js/*.js', 'favicon.ico'])
     .pipe(conn.newer(remotePath))
     .pipe(conn.dest(remotePath));
 });
