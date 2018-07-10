@@ -61,6 +61,7 @@
 					<li><a href="#turret">Věž</a></li>
 					<li><a href="#finito">Kompletace</a></li>
 					<li><a href="#general-components">Obecné komponenty</a></li>
+					<li><a href="software">Programování</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -1813,7 +1814,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h3 class="title">Motor s magnetem</h2>
+					<h3 class="title">Motor s magnetem</h3>
 					<p>Do některých motorů na míčkoflus je potřeba přidat
 					magnet pro snímání otáček a polohy motory a následné
 					regulaci těchto motorů. Konkrétně se jedná o motory,
@@ -1989,6 +1990,104 @@
 						Nyní máš hotový motor s magnetem.
 					</figcaption>
 				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div id="software" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h2 class="title">Programování</h2>
+					<p>Následující kroky tě provedou základními kroky oživení a
+					programování Míčkoflusu.</p>
+				</div>
+				<div class="row">
+					<h3 class="title">Visual Studio Code</h3>
+					<p>Míčkoflus je programován v editor Visual Studio Code. <a
+					href="https://code.visualstudio.com/Download">Stáhněte te si
+					ho</a> a nainstalujte.</p>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_install.png">
+							<img src="img/sw/pio_install.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Je potřeba nainstalovat rozšíření "PlatformIO IDE". Po nainstalování rozšíření klikněte na "Reload", a po
+							restartu vyčkejte, dokud PlatformIO nestáhne své závislosti (mělo by o tom informovat v terminálovém okně ve spodní části).
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/demo_download.png">
+							<img src="img/sw/demo_download.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Stáhněte si <a href="https://github.com/RoboticsBrno/mickoflus-demo01">demo projekt pro míčkoflus</a>.
+							Pokud znáte verzovací nastroj GIT, tak ho použijte, jinak stáhněte zip archiv.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_open.png">
+							<img src="img/sw/pio_open.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Po instalaci PlatformIO IDE rozšíření se otevře záložka "PIO Home". V ní otevřete demo projekt, který jste stáhli v předchozím kroku.
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_edit.png">
+							<img src="img/sw/pio_edit.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Hlavní tělo programu najdete v souboru <i>main.cpp</i>. Upravte tam jméno vlastníka a jméno míčkoflusu, abyste ho našli v Androidí aplikaci.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_upload.png">
+							<img src="img/sw/pio_upload.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Připojte míčkoflus k počítači pomocí micro USB kabelu, zapojeného do ESP32 desky. Program zkompilujete a nahrajete do
+							desky pomocí tlačítka "upload" ve spodní části okna.<br>
+							Pokud Visual Studio nenajde vaši desku, možná je potřeba upravit možnost <kbd>upload_port</kbd> v souboru <i>platformio.ini</i>.
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/blufi_setup.jpg">
+							<img src="img/sw/blufi_setup.jpg" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Po prvním spuštění programu na míčkoflusu je třeba nastavit wifi, na kterou se má připojovat. Stáhněte si aplikaci <a href="https://play.google.com/store/apps/details?id=com.espressif.espblufi">EspBlufi</a>, spusťte ji, a v seznamu zařízení najděte to vaše. Kliknutím na <i>Configure</i> nastavte WiFi pro váš míčkoflus. Musí to být ta stejná, na které je váš telefon, na robotáboře 2018 použijte WiFi <kbd>Mickoland</kbd> s heslem <kbd>flusflus</kbd>.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/app.jpg">
+							<img src="img/sw/app.jpg" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Pro ovládání míčkoflusu stáhněte <a href="https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller">aplikaci RBController</a>. Při spuštění jméno majitele na stejnou hodnotu, na kterou jste nastavili <kbd>OWNER</kbd> v souboru <i>main.cpp</i>. Ujistěte se, že jste na stejné WiFi jako je míčkoflus, a měl by se zobrazit v seznamu.<br>
+							Samotné ovládání je řešeno pomocí HTML stránky, která je umístěná na míčkoflusu. Můžete ji volně editovat, najdete ji v <i>data/index.html</i>. Po změně je potřeba stisknout "Upload" ve Visual Studiu, a poté "Obnovit" v RBController aplikaci.<br>
+							To platí i pro jiné změny ve firmwaru nebo restartování robota.
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<figcaption class="figure-caption">
+							<b>Můžete začít programovat!</b> Doporučené čtení:
+							<ul>
+								<li><a href="https://github.com/RoboticsBrno/mickoflus-demo01/blob/master/README.md">README.md míčkoflus dema</a></li>
+								<li><a href="http://technika.tasemnice.eu/docs/rbcontrol/annotated.html">Dokumentace RBControl knihovny</a></li>
+								<li><a href="http://technika.tasemnice.eu/docs/rbprotocol/annotated.html">Dokumentace RBProtocol knihovny</a></li>
+							</ul>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</div>
