@@ -1,0 +1,10 @@
+{
+  "name": "mickoflus.cz",
+  "description": "Website for Mickoflus",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "minimist": "^1.2.0",
+    "vinyl-ftp": "^0.6.1"
+  }
+}
