@@ -1,7 +1,7 @@
 language: node_js
 install:
   - npm install
-  - npm install gulp vinyl-ftp minimist --save-dev
+  - npm install gulp vinyl-ftp minimist gulp-images-resizer --save-dev
 env:
   global:
     secure: "nVFcic3/BmvdxQZpCS5eGXF3K6q0WD/XSvNhhhlPVle9b9DnUJX96RaN1Uo01v6nnu/PeDNluVqhQ/s7Vo7ivc4tc1Oxdr+7eaEqw9WO6pHvRMO9xJz5jhpUejnv9UGG118XV4oHDD89qYuKwbLdcG+IimR2Q2dgMLLUI3sl01HgbOJM8jwLAOEK5uQl+aB/hoS3Akx30CwMGZpb5UFwf06eyH+iaMVfPJfLVJDHeBgPYMZy/3qOG0c55EZCC7ybewatyxTi2RfAWBlwsCmY0JQXqDNQQpcGHFBDaoSzb4RR+hMn1f3ZDPaWhkcvAE+9BQXscfNZImb0aRywaFeOGdG0kwA4DbYQujymJfiZh9SBuuQettN3DLSixaT6SZJ/Vtcccytgd8aXbEXan2oBvgCxiuOUyP5SbW76w9LB4yjk4gEN4WWYYko/ZT9pkCRKSViwSMJSDrzVlLWAkNa+96ivAp+/gf8cN97l+VtsxUQRDJ9XmVv3NSAOscTqSUujZoS1p59n80NcbQWwZafJyTHn496dhlDwBwISe0lsGh3MsJbkOYxaff6IPu7xQAX1pzGNUcf0jlJmMFoKiTcQb+Lar0j7J0kY/BTqvFNQLpMxo43cmJmJFUazcLgn8heC0RYlbUvTmn72t14kOEyZjt3cB4QeVB1wapbHHZ9SgQg="
