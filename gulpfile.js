@@ -14,7 +14,7 @@ gulp.task('deploy', function() {
     password: args.password,
     log: gulp.log
   });
-  gulp.src(['*.html', './img/**', 'preview/**', 'css/*.css', 'fonts/*', 'js/*.js', 'favicon.ico'])
+  return gulp.src(['*.html', './img/**', 'preview/**', 'css/*.css', 'fonts/*', 'js/*.js', 'favicon.ico'])
     .pipe(conn.newer(remotePath))
     .pipe(conn.dest(remotePath));
 });
@@ -30,7 +30,6 @@ gulp.task('img-preview', function() {
 });
 
 gulp.task('build', ['img-preview'], function() {
-
 });
 
 
