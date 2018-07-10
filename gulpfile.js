@@ -11,7 +11,7 @@ gulp.task('deploy', function() {
     host: args.server,
     user: args.user,
     password: args.password,
-    log: gutil.log
+    log: gulp.log
   });
   gulp.src(['*.html', './img/**', 'css/*.css', 'fonts/*', 'js/*.js', 'favicon.ico'])
     .pipe(conn.newer(remotePath))
