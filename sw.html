@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Software &#8212; Míčkoflus</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header id="home-guide">
+		<div class="bg-img bg-grey"></div>
+		<nav id="nav" class="navbar nav-transparent fixed-nav">
+			<div class="container">
+
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/logo.svg" alt="logo">
+							<img class="logo-alt" src="img/logo.svg" alt="logo">
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="about" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h1>Průvodce softwarem</h1>
+				</div>
+				<p>Následující průvodce ti poradí, jak začít programovat míčkoflus</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="electro" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h2 class="title">Visual Studio Code</h2>
+					<p>Míčkoflus je programován v editor Visual Studio Code. <a href="https://code.visualstudio.com/Download">Stáhněte te si ho</a> a nainstalujte.</p>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_install.png">
+							<img src="img/sw/pio_install.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Je potřeba nainstalovat rozšíření "PlatformIO IDE". Po nainstalování rozšíření klikněte na "Reload", a po
+							restartu vyčkejte, dokud PlatformIO nestáhne své závislosti (mělo by o tom informovat v terminálovém okně ve spodní části).
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/demo_download.png">
+							<img src="img/sw/demo_download.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Stáhněte si <a href="https://github.com/RoboticsBrno/mickoflus-demo01">demo projekt pro míčkoflus</a>.
+							Pokud znáte verzovací nastroj GIT, tak ho použijte, jinak stáhněte zip archiv.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_open.png">
+							<img src="img/sw/pio_open.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Po instalaci PlatformIO IDE rozšíření se otevře záložka "PIO Home". V ní otevřete demo projekt, který jste stáhli v předchozím kroku.
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_edit.png">
+							<img src="img/sw/pio_edit.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Hlavní tělo programu najdete v souboru <i>main.cpp</i>. Upravte tam jméno vlastníka a jméno míčkoflusu, abyste ho našli v Androidí aplikaci.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/pio_upload.png">
+							<img src="img/sw/pio_upload.png" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Připojte míčkoflus k počítači pomocí micro USB kabelu, zapojeného do ESP32 desky. Program zkompilujete a nahrajete do
+							desky pomocí tlačítka "upload" ve spodní části okna.<br>
+							Pokud Visual Studio nenajde vaši desku, možná je potřeba upravit možnost <kbd>upload_port</kbd> v souboru <i>platformio.ini</i>.
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/blufi_setup.jpg">
+							<img src="img/sw/blufi_setup.jpg" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Po prvním spuštění programu na míčkoflusu je třeba nastavit wifi, na kterou se má připojovat. Stáhněte si aplikaci <a href="https://play.google.com/store/apps/details?id=com.espressif.espblufi">EspBlufi</a>, spusťte ji, a v seznamu zařízení najděte to vaše. Kliknutím na <i>Configure</i> nastavte WiFi pro váš míčkoflus. Musí to být ta stejná, na které je váš telefon, na robotáboře 2018 použijte WiFi <kbd>Mickoland</kbd> s heslem <kbd>flusflus</kbd>.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="row">
+					<figure class="figure col-md-6">
+						<a class="lightbox" href="img/sw/app.jpg">
+							<img src="img/sw/app.jpg" class="figure-img img-fluid rounded img-responsive" alt="">
+						</a>
+						<figcaption class="figure-caption">
+							Pro ovládání míčkoflusu stáhněte <a href="https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller">aplikaci RBController</a>. Při spuštění jméno majitele na stejnou hodnotu, na kterou jste nastavili <kbd>OWNER</kbd> v souboru <i>main.cpp</i>. Ujistěte se, že jste na stejné WiFi jako je míčkoflus, a měl by se zobrazit v seznamu.<br>
+							Samotné ovládání je řešeno pomocí HTML stránky, která je umístěná na míčkoflusu. Můžete ji volně editovat, najdete ji v <i>data/index.html</i>. Po změně je potřeba stisknout "Upload" ve Visual Studiu, a poté "Obnovit" v RBController aplikaci.<br>
+							To platí i pro jiné změny ve firmwaru nebo restartování robota.
+						</figcaption>
+					</figure>
+					<figure class="figure col-md-6">
+						<figcaption class="figure-caption">
+							<b>Můžete začít programovat!</b> Doporučené čtení:
+							<ul>
+								<li><a href="https://github.com/RoboticsBrno/mickoflus-demo01/blob/master/README.md">README.md míčkoflus dema</a></li>
+								<li><a href="http://technika.tasemnice.eu/docs/rbcontrol/">Dokumentace RBControl knihovny</a></li>
+								<li><a href="http://technika.tasemnice.eu/docs/rbprotocol/">Dokumentace RBProtocol knihovny</a></li>
+							</ul>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer" class="sm-padding bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/logo-alt.svg" alt="logo"></a>
+					</div>
+
+					<ul class="footer-follow">
+						<li><a href="https://www.facebook.com/robotarna/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/RobotikaBrno"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCxLGjiNwJ9u7Wdb1kahaHgg"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https:/www.github.com/RoboticsBrno"><i class="fa fa-github"></i></a></li>
+					</ul>
+
+					<div class="footer-copyright">
+						<p>Copyright © 2017. All Rights Reserved. Based on a design by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="back-to-top"></div>
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
