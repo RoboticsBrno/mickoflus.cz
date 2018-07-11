@@ -89,8 +89,4 @@
 			}
 		}
 	});
-
-	// Lazy
-	$('.lazy').Lazy();
-
 })(jQuery);
