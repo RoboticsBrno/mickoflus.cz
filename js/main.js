@@ -90,4 +90,7 @@
 		}
 	});
 
+	// Lazy
+	$('.lazy').Lazy();
+
 })(jQuery);
