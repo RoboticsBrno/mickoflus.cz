@@ -33,7 +33,7 @@ gulp.task('img-preview', function() {
   return gulp.src('img/**/*.*')
       .pipe(resizer({
           format: "jpg",
-          width: "30%",
+          width: "40%",
           quality: 70
       }))
   .pipe(gulp.dest('preview/'));
