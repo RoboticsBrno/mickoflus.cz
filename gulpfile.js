@@ -30,10 +30,9 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('img-preview', function() {
-  return gulp.src('img/**/*.*')
+  return gulp.src(['img/**/*.jpg', 'img/**/*.png'])
       .pipe(resizer({
-          format: "jpg",
-          width: "40%",
+          width: 740,
           quality: 70
       }))
   .pipe(gulp.dest('preview/'));
