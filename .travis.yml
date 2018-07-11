@@ -3,11 +3,8 @@ node_js:
   - "8"
 install:
   - npm install
-  - npm install gulp vinyl-ftp minimist gulp-images-resizer --save-dev
+  - npm install gulp vinyl-ftp minimist gulp-images-resizer fancy-log --save-dev
 script:
   - gulp build
 after_success:
-  echo $FTP_USER
-  echo $FTP_PASSWORD
-  echo $FTP_SERVER
   gulp deploy --user $FTP_USER --password $FTP_PASSWORD --server $FTP_SERVER
