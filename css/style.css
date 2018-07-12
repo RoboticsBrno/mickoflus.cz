@@ -1791,6 +1791,7 @@ header {
 }
 
 .figure-img {
+    width: 100%;
     margin-bottom: 0;
     line-height: 1;
 }
