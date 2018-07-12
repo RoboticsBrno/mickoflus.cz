@@ -2024,6 +2024,9 @@
 					<p>Míčkoflus je programován v editoru Visual Studio Code. <a target="_tab"
 					href="https://code.visualstudio.com/Download">Stáhněte si
 					ho</a> a nainstalujte.</p>
+					<p>Také budeme potřebovat verzovací nástroj Git. Nainstalujte si <a href="https://git-scm.com/downloads">Git z této stránky</a>. 
+						Při instalaci ponech defaultní nastavení instalátoru.
+					</p>
 				</div>
 				<div class="row">
 					<figure class="figure col-md-6">
@@ -2093,38 +2096,6 @@
 							Dále je potřeba zkalibrovat baterii na váš míčkoflus. Koukejte se do sériové konzole, měl by tam být těsně po spuštění řádek začínající na <i>BATTERY CALIBRATION INFO</i>. Zapište si <i>raw</i> hodnotu.
 							Změřte napětí na baterii podle obrázku, a vynásobte na milivolty (příklad: 7.84 V -> 7.84 * 1000 = 7840 milivoltů). Koeficient získáte výpočtem <kbd>napětíMilliVolty / raw</kbd>, tuto hodnut změňte ve volání <kbd>batt.setCoef(9.f);</kbd> v main.cpp.<br>
 							Příklad: raw hodnota je 944, multimetr naměřil 7.84 V. <kbd>944 / 7840 = 8.3</kbd>, koeficient je 8.3.
-						</figcaption>
-					</figure>
-					<figure class="figure col-md-6">
-						<a class="lightbox" href="img/sw/app.jpg">
-							<img src="img/empty.gif" data-src="preview/sw/app.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
-						</a>
-						<figcaption class="figure-caption">
-							Pro ovládání míčkoflusu stáhněte <a target="_tab" href="https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller">aplikaci RBController</a>. Při spuštění jméno majitele na stejnou hodnotu, na kterou jste nastavili <kbd>OWNER</kbd> v souboru <i>main.cpp</i>. Ujistěte se, že jste na stejné WiFi jako je míčkoflus, a měl by se zobrazit v seznamu.<br>
-							Samotné ovládání je řešeno pomocí HTML stránky, která je umístěná na míčkoflusu. Můžete ji volně editovat, najdete ji v <i>data/index.html</i>. Po změně je potřeba stisknout "Upload" ve Visual Studiu, a poté "Obnovit" v RBController aplikaci.<br>
-							To platí i pro jiné změny ve firmwaru nebo restartování robota.
-						</figcaption>
-					</figure>
-					<figure class="figure col-md-6">
-						<figcaption class="figure-caption">
-							<b>Můžete začít programovat!</b> Doporučené čtení:
-							<ul>
-								<li><a target="_tab" href="https://github.com/RoboticsBrno/mickoflus-demo01/blob/master/README.md">README.md míčkoflus dema</a></li>
-								<li><a target="_tab" href="http://technika.tasemnice.eu/docs/rbcontrol/annotated.html">Dokumentace RBControl knihovny</a></li>
-								<li><a target="_tab" href="http://technika.tasemnice.eu/docs/rbprotocol/annotated.html">Dokumentace RBProtocol knihovny</a></li>
-							</ul>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="row">
-					<figure class="figure col-md-6">
-						<a class="lightbox" href="img/sw/battery.jpg">
-							<img src="img/empty.gif" data-src="preview/sw/battery.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
-						</a>
-						<figcaption class="figure-caption">
-							Dále je potřeba zkalibrovat baterii na váš míčkoflus. Koukejte se do sériové konzole, měl by tam být těsně po spuštění řádek začínající na <i>BATTERY CALIBRATION INFO</i>. Zapište si <i>raw</i> hodnotu.
-							Změřte napětí na baterii podle obrázku, a vynásobte na milivolty. Koeficient získáte výpočtem <kbd>napětíMilliVolty / raw</kbd>, tuto hodnut změňte ve volání <kbd>batt.setCoef(9.f);</kbd> v main.cpp.<br>
-							Příklad: raw hodnota je 944, multimetr naměřil 7.84V. <kbd>944 / 7840 = 8.3</kbd>, koeficient je 8.3.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-6">
