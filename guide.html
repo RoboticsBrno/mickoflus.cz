@@ -2091,8 +2091,8 @@
 						</a>
 						<figcaption class="figure-caption">
 							Dále je potřeba zkalibrovat baterii na váš míčkoflus. Koukejte se do sériové konzole, měl by tam být těsně po spuštění řádek začínající na <i>BATTERY CALIBRATION INFO</i>. Zapište si <i>raw</i> hodnotu.
-							Změřte napětí na baterii podle obrázku, a vynásobte na milivolty. Koeficient získáte výpočtem <kbd>napětíMilliVolty / raw</kbd>, tuto hodnut změňte ve volání <kbd>batt.setCoef(9.f);</kbd> v main.cpp.<br>
-							Příklad: raw hodnota je 944, multimetr naměřil 7.84V. <kbd>944 / 7840 = 8.3</kbd>, koeficient je 8.3.
+							Změřte napětí na baterii podle obrázku, a vynásobte na milivolty (příklad: 7.84 V -> 7.84 * 1000 = 7840 milivoltů). Koeficient získáte výpočtem <kbd>napětíMilliVolty / raw</kbd>, tuto hodnut změňte ve volání <kbd>batt.setCoef(9.f);</kbd> v main.cpp.<br>
+							Příklad: raw hodnota je 944, multimetr naměřil 7.84 V. <kbd>944 / 7840 = 8.3</kbd>, koeficient je 8.3.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-6">
