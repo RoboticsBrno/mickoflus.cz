@@ -5,10 +5,14 @@
 Web page for Míčkoflus
 
 ## How to make image previews on a local computer
-For all images are automatically created preview by [Travis CI](https://travis-ci.org/) and then uploaded throw FTP on the web. When you want to see preview images on the local computers (after cloning repo) you need to do next a few steps.
+
+There are an automatically created miniatures for all images by [Travis
+CI](https://travis-ci.org/) and then uploaded via FTP on the web. When you
+want to see preview images on a local computer (after cloning the repo) you need
+to do following steps.
 
 
-Firstly you need some Linux terminal (e.g. Ubuntu, [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)).
+Fist you need a Linux terminal (e.g. Ubuntu, [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)).
 
 Then use this commands:
 ```
@@ -17,12 +21,14 @@ sudo apt-get install -y nodejs
 sudo apt-get install npm
 cd WORKING_DIR_WITH_THIS_PROJECT
 npm install
-gulp build 
+gulp build
 ```
-Command `gulp build` could work a few minutes (e.g. 10 minutes). After that the previews are ready.
+Command `gulp build` can take few minutes to complete (e.g. 10 minutes). After
+that the previews are ready.
 
 
-Could be also necessary install `gulp` separately:
+It could be also necessary install `gulp` separately:
+
 ```
 sudo npm install -g gulp
 ```
