@@ -6,15 +6,19 @@ Web page for Míčkoflus
 
 ## How to make image previews on a local computer
 
-There are an automatically created miniatures for all images by [Travis
-CI](https://travis-ci.org/) and then uploaded via FTP on the web. When you
-want to see preview images on a local computer (after cloning the repo) you need
-to do following steps.
+The website uses gulp to generate miniatures for images. Therefore when you
+clone the repo, there will be no previews. To fix it, just call `gulp build`.
+The first execution can take up to 10 minutes to complete.
 
+Note: Gulp is also used to deploy the website. This step is automated using
+travis a therefore is not needed to be executed manually.
 
-Fist you need a Linux terminal (e.g. Ubuntu, [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)).
+## For Windows users
 
-Then use this commands:
+The (probably) easiest way to run `gulp` is to use [Windows Subsystem for
+Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
+Then execute these commands in terminal:
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -23,9 +27,6 @@ cd WORKING_DIR_WITH_THIS_PROJECT
 npm install
 gulp build
 ```
-Command `gulp build` can take few minutes to complete (e.g. 10 minutes). After
-that the previews are ready.
-
 
 It could be also necessary install `gulp` separately:
 
