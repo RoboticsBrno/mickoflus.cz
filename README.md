@@ -6,7 +6,7 @@ Web page for Míčkoflus
 
 ## How to make image previews on a local computer
 
-The website uses gulp to generate miniatures for images. Therefore when you
+The website uses [gulp](https://gulpjs.com/) to generate miniatures for images. Therefore when you
 clone the repo, there will be no previews. To fix it, just call `gulp build`.
 The first execution can take up to 10 minutes to complete.
 
