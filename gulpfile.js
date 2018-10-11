@@ -13,9 +13,11 @@ gulp.task('deploy', function() {
     host: args.server,
     user: args.user,
     password: args.password,
-    log: gulp.log
+    log: gulp.log,
+    secureOptions: {rejectUnauthorized: false},
+    secure: true
   });
-  gulp.src(
+  return gulp.src(
     ['*.html', 'img/**', 'preview/**', 'css/*.css',
      'fonts/*', 'js/*.js', 'favicon.ico'],
      {base: '.'})
