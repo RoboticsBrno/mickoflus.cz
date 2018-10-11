@@ -38,7 +38,6 @@ gulp.task('img-preview', function() {
   .pipe(gulp.dest('preview/'));
 });
 
-gulp.task('build', ['img-preview'], function() {
-});
+gulp.task('build', gulp.series('img-preview'));
 
 
