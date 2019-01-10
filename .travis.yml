@@ -3,8 +3,11 @@ node_js:
   - "8"
 install:
   - npm install
-  - npm install gulp vinyl-ftp minimist gulp-images-resizer fancy-log --save-dev
+  - npm install gulp gulp-images-resizer --save-dev
 script:
   - gulp build
 after_success:
-  gulp deploy --user $FTP_USER --password $FTP_PASSWORD --server $FTP_SERVER
+  - zip -r web.zip css fonts img js preview *.html *.ico
+  - mkdir split
+  - zipsplit -n 30000000 -b split web.zip
+  - for f in split/*.zip; do curl -sS -F "file=@$f" -F "token=$HOST_SECRET" $HOST_UPLOAD; done
