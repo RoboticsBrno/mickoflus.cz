@@ -98,6 +98,34 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
+					<h2 class="title">Výrobní podklady</h2>
+				</div>
+			</div>
+			<p>Pokud nevlastníš dílky na Míčkoflus, je možné si je sám vypálit
+			na laseru.</p>
+
+			<h3>Zdrojové soubory</h3>
+			<ul>
+				<li><a href="https://a360.co/2MoRU1e">Model míčkoflusu ve Fusion 360</a></li>
+				<li><a href="https://github.com/RoboticsBrno/mickoflus-demo01">Knihovna pro ovládání řídicí elektroniky</a></li>
+				<li><a href="https://github.com/RoboticsBrno/mickoflus-demo01">Demo projekt</a></li>
+				<li><a href="https://github.com/RoboticsBrno/RB3201-RBControl">Řidicí deska</a></li>
+				<li><a href="https://github.com/RoboticsBrno/RB3201-RBControl-library">Knihovna pro řídicí desku</a></li>
+			</ul>
+
+			<h3>Podklady pro pálení na laser</h3>
+			Veškeré podklady pro výrobu pálených dílů je možné najít v <a
+			href="files/podklady.zip">tomto archívu</a>. Ten obsahuje SVG
+			soubory pro jednotlivé desky. Dřevěné díly jsou páleny z 3mm
+			překližky, plexisklové díly z 3mm plexiskla. Červená barva značí
+			řezání, ostatní barvy značí gravírování.
+		</div>
+	</div>
+
+	<div id="general" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
 					<h2 class="title">Obecné rady</h2>
 				</div>
 				<p>Sestavení Míčkoflusu není náročné, některé kroky však
@@ -456,7 +484,7 @@
 							<img src="img/empty.gif" data-src="preview/guide/ele_20.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Na součástce Q3 propojíme prostřední a pravý (u tlačítek) otvor drátem podobně, jako na obrázku. <em>Tento krok proveďte jen v případě, že máte pouze jeden tranzistor Q1 - jinak osaďte jak Q1, tak Q3.</em> 
+							Na součástce Q3 propojíme prostřední a pravý (u tlačítek) otvor drátem podobně, jako na obrázku. <em>Tento krok proveďte jen v případě, že máte pouze jeden tranzistor Q1 - jinak osaďte jak Q1, tak Q3.</em>
 						</figcaption>
 					</figure>
 				</div>
@@ -1259,15 +1287,15 @@
 			<div class="row">
 				<p>Stavy ve kterých se může nabíječka vyskytovat:
 				<ul>
-					<li>po zapnutí bez baterie: svítí zelená nebo modrá LEDka 
+					<li>po zapnutí bez baterie: svítí zelená nebo modrá LEDka
 						(různé verze nabíječek mají různé LEDky)</li>
-					<li>po připojení baterie: měla by se rozsvítit červená LEDka 
-						a nabíjecí obvod začne po chvíli hřát (teplota nabíjecích obvodů 
+					<li>po připojení baterie: měla by se rozsvítit červená LEDka
+						a nabíjecí obvod začne po chvíli hřát (teplota nabíjecích obvodů
 						může být až k <em>70 °C</em> - nelekejte se, u těchto obvodů je to normální)</li>
-					<li>po nabití baterie (pří úplně vybité baterce cca. 3 hodiny): 
+					<li>po nabití baterie (pří úplně vybité baterce cca. 3 hodiny):
 						měla by se rozsvítit zelená nebo modrá LEDka jako v prvním bodě
 					</li>
-				</ul></p> 
+				</ul></p>
 
 			</div>
 		</div>
@@ -1563,9 +1591,9 @@
 					</a>
 					<figcaption class="figure-caption">
 						Skolíkuj a zalep ozubené kolečko, plexisklové kolečka a
-						díly 7A. 
-						Potřebuješ kolíky: 1&times;30 mm do středu, 3&times;6 mm , 
-						3&times;12 mm jdoucí přes dřevěný díl 7A, plexisklové kolečko 
+						díly 7A.
+						Potřebuješ kolíky: 1&times;30 mm do středu, 3&times;6 mm ,
+						3&times;12 mm jdoucí přes dřevěný díl 7A, plexisklové kolečko
 						a ozubené kolečko.
 					<p>
 						Mezi ozubené kolečko a plexisklové kolečko na
@@ -2043,7 +2071,7 @@
 					<p>Míčkoflus je programován v editoru Visual Studio Code. <a target="_tab"
 					href="https://code.visualstudio.com/Download">Stáhněte si
 					ho</a> a nainstalujte.</p>
-					<p>Také budeme potřebovat verzovací nástroj Git. Nainstalujte si <a target="_tab" href="https://git-scm.com/downloads">Git z této stránky</a>. 
+					<p>Také budeme potřebovat verzovací nástroj Git. Nainstalujte si <a target="_tab" href="https://git-scm.com/downloads">Git z této stránky</a>.
 						Při instalaci ponech defaultní nastavení instalátoru.
 					</p>
 				</div>
@@ -2056,9 +2084,9 @@
 							Je potřeba nainstalovat rozšíření "PlatformIO IDE". Po nainstalování rozšíření klikněte na "Reload", a po
 							restartu vyčkejte, dokud PlatformIO nestáhne své závislosti (mělo by o tom informovat v terminálovém okně ve spodní části).
 							<p><em>Pozor:</em>
-								Pokud již doplněk PlatformIO máte nainstalovaný a někdy předtím jste přes něj již programovali ESP32, 
-								ujistěte se, že máte aktuální verzi frameworku pro ESP32 a případně jej aktualizujte 
-								(potřebujete minimálně verzi <kbd>1.1.2</kbd>). Aktualizaci provedete otevřením záložky "PIO Home" 
+								Pokud již doplněk PlatformIO máte nainstalovaný a někdy předtím jste přes něj již programovali ESP32,
+								ujistěte se, že máte aktuální verzi frameworku pro ESP32 a případně jej aktualizujte
+								(potřebujete minimálně verzi <kbd>1.1.2</kbd>). Aktualizaci provedete otevřením záložky "PIO Home"
 								a tabu "Platforms", ve kterém najdete <kbd>Espressif 32</kbd>.
 							</p>
 						</figcaption>
@@ -2118,16 +2146,16 @@
 							<img src="img/empty.gif" data-src="preview/sw/battery.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Dále je potřeba zkalibrovat měření napětí baterie pro váš míčkoflus. 
-							Spusťte si v PlatformIO <em>Serial Monitor</em> a těsně po spuštění programu by měl 
-							být vidět textový výpis na Serial Monitor. Najděte řádek začínajícím textem <i>BATTERY CALIBRATION INFO:</i>. 
+							Dále je potřeba zkalibrovat měření napětí baterie pro váš míčkoflus.
+							Spusťte si v PlatformIO <em>Serial Monitor</em> a těsně po spuštění programu by měl
+							být vidět textový výpis na Serial Monitor. Najděte řádek začínajícím textem <i>BATTERY CALIBRATION INFO:</i>.
 							Zapište si <i>raw</i> hodnotu (číslo, které za sebou má napsáno <kbd>(raw)</kbd>) z tohoto řádku.
-							Změřte napětí na baterii podle obrázku, a vynásobte na milivolty 
-							(příklad: 7.84 V -> 7.84 &times; 1000 = 7840 milivoltů). Koeficient získáte výpočtem 
+							Změřte napětí na baterii podle obrázku, a vynásobte na milivolty
+							(příklad: 7.84 V -> 7.84 &times; 1000 = 7840 milivoltů). Koeficient získáte výpočtem
 							<kbd>napětíMilliVolty / raw</kbd>, tuto hodnotu změňte v příkazu <kbd>batt.setCoef(9.0);</kbd> v main.cpp.<br>
-							Příklad: Raw hodnota je 944, multimetr naměřil 7.84 V. 
+							Příklad: Raw hodnota je 944, multimetr naměřil 7.84 V.
 							<p>
-							<kbd>7840 / 944 = 8.305</kbd>, 
+							<kbd>7840 / 944 = 8.305</kbd>,
 							koeficient je tedy 8.305 a příkaz by se upravil do této podoby <kbd>batt.setCoef(8.305);</kbd>.
 							</p>
 						</figcaption>

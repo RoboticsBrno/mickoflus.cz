@@ -7,7 +7,7 @@ install:
 script:
   - gulp build
 after_success:
-  - zip -r web.zip css fonts img js preview *.html *.ico
+  - zip -r web.zip css fonts img js preview files *.html *.ico
   - mkdir split
   - zipsplit -n 30000000 -b split web.zip
   - for f in split/*.zip; do curl -sS -F "file=@$f" -F "token=$HOST_SECRET" $HOST_UPLOAD; done
