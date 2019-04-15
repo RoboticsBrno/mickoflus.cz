@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$TRAVIS_BRANCH" == "master" ]; then # work just for master
+if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == false ]; then # work just for master (not PR to master)
   zip -r web.zip css fonts img js preview files *.html *.ico
   mkdir split
   zipsplit -n 30000000 -b split web.zip
