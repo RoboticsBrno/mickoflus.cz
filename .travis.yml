@@ -1,17 +1,12 @@
 language: node_js
 node_js:
   - "8"
+before_install: 
+  - chmod +x web_deploy.sh
 install:
   - npm install
   - npm install gulp gulp-images-resizer --save-dev
 script:
   - gulp build
 after_success:
-  - zip -r web.zip css fonts img js preview files *.html *.ico
-  - mkdir split
-  - zipsplit -n 30000000 -b split web.zip
-  - for f in split/*.zip; do curl -sS -F "file=@$f" -F "token=$HOST_SECRET" $HOST_UPLOAD; done
-
-branches:
-  only:
-  - master
+  - ./web_deploy.sh
