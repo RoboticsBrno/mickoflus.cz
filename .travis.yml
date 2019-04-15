@@ -1,8 +1,6 @@
 language: node_js
 node_js:
   - "8"
-before_install: 
-  - chmod +x web_deploy.sh
 install:
   - npm install
   - npm install gulp gulp-images-resizer --save-dev
