@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "8"
+install:
+  - npm install
+  - npm install gulp gulp-images-resizer --save-dev
+script:
+  - gulp build
+after_success:
+  - ./web_deploy.sh
