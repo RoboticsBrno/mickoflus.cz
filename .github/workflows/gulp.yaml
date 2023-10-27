@@ -27,6 +27,9 @@ jobs:
         npm install
         npm install gulp gulp-images-resizer --save-dev
 
+    - name: Remove 'preview' from .gitignore
+      run: sed -i '/^preview$/d' .gitignore
+
     - name: Run gulp build
       run: gulp build
 
