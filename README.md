@@ -1,8 +1,6 @@
-# mickoflus.cz
+# Mickoflus
 
-[![Build Status](https://travis-ci.org/RoboticsBrno/mickoflus.cz.svg?branch=master)](https://travis-ci.org/RoboticsBrno/mickoflus.cz)
-
-Web page for Míčkoflus
+Web page for Míčkoflus - https://mickoflus.robotickytabor.cz/
 
 ## How to make image previews on a local computer
 
